@@ -8,8 +8,8 @@ from torchvision.transforms import v2
 from einops import einsum
 
 
-INPUT_SIZE = 256
-# INPUT_SIZE = 528
+# INPUT_SIZE = 256
+INPUT_SIZE = 528
 
 
 def enc_preprocess(pil_image, crop=False, image=False, rand_trans=False):
@@ -36,11 +36,11 @@ class Encoder(nn.Module):
     def __init__(self, k_dim, input_dim, hidden, output_dim, device):
         super().__init__()
         self.k_dim = k_dim
-        self.model = torchvision.models.efficientnet_b0(num_classes=k_dim)
-        self.resize = torchvision.models.efficientnet.EfficientNet_B0_Weights.IMAGENET1K_V1.transforms()  # INPUT_SIZE = 256
+        # self.model = torchvision.models.efficientnet_b0(num_classes=k_dim)
+        # self.resize = torchvision.models.efficientnet.EfficientNet_B0_Weights.IMAGENET1K_V1.transforms()  # INPUT_SIZE = 256
         
-        # self.model = torchvision.models.efficientnet_b6(num_classes=k_dim)
-        # self.resize = torchvision.models.efficientnet.EfficientNet_B6_Weights.IMAGENET1K_V1.transforms()  # INPUT_SIZE = 528
+        self.model = torchvision.models.efficientnet_b6(num_classes=k_dim)
+        self.resize = torchvision.models.efficientnet.EfficientNet_B6_Weights.IMAGENET1K_V1.transforms()  # INPUT_SIZE = 528
         
         self.device = device
 #       # in_channels, out_channels, kernel_size, stride=1, padding=0, dilation=1, 

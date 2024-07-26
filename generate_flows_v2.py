@@ -11,19 +11,18 @@ from src.encoder import Encoder, enc_preprocess
 
 from src.encoder import INPUT_SIZE
 
-from modflow.utils import clean_dirs
+from src.utils import clean_dirs
  
-# this is used for parallel training # set_start_method('spawn')
 device = torch.device('cuda:1' if torch.cuda.is_available() else 'cpu')
 
-# LOAD = 'data/merged/'
-# SAVE = 'check_points/latent_flow_merged_8195/'
+LOAD = 'data/merged/'
+SAVE = 'check_points/latent_flow_merged_8195/'
 
 # LOAD = 'data/test_imgs_unsplash/'
 # SAVE = 'check_points/latent_flow_unsplash_8195/'
 
-LOAD = 'data/test_imgs_unsplash/'
-SAVE = 'check_points/latent_flow_unsplash_515/' 
+# LOAD = 'data/test_imgs_unsplash/'
+# SAVE = 'check_points/latent_flow_unsplash_515/' 
 
 
 def load_filenames(path):
