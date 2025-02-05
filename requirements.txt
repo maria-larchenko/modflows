@@ -1,0 +1,6 @@
+einops @ git+https://github.com/arogozhnikov/einops.git@6181e1e95dc58c00a3143c1726da1c6ee0463164
+matplotlib==3.9.2
+numpy==1.26.3
+pillow==10.2.0
+torch==2.1.2+cu121
+torchvision==0.16.2+cu121
