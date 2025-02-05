@@ -1,12 +1,12 @@
-# Color Style Transfer with Modulated Flows
+# Color Transfer with Modulated Flows (AAAI 2025)
+
+This is the official implementation of AAAI 2025 paper "Color Transfer with Modulated Flows". 
 
 <p align="center">
      <img src="./img/results_unsplash.png" style="width: 1000px"/>
 </p>
 
-This is the source code of the paper 
-["Color Style Transfer with Modulated Flows"](https://openreview.net/forum?id=Lztt4WVusu) 
-for Workshop SPIGM @ ICML 2024.
+The paper was also presented at ["Workshop SPIGM @ ICML 2024"](https://openreview.net/forum?id=Lztt4WVusu).
 
 Please refer to the
 - <strong>src</strong> directory for models definitions
