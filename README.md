@@ -10,6 +10,7 @@ The paper was also presented at ["Workshop SPIGM @ ICML 2024"](https://openrevie
 
 Please refer to the
 - <strong>[ModFlows_demo.ipynb](https://github.com/maria-larchenko/modflows/blob/main/ModFlows_demo.ipynb)</strong> to use the pretrained model for color transfer on your own images with the demo jupyter notebook
+- <strong>[ModFlows_demo_batched.ipynb](https://github.com/maria-larchenko/modflows/blob/main/ModFlows_demo_batched.ipynb)</strong> to use the pretrained model for color transfer for large images
 - <strong>[HuggingFace](https://huggingface.co/MariaLarchenko/modflows_color_encoder)</strong> for the model checkpoints
 - <strong>src</strong> directory for models definitions
 - <strong>generate_flows_v2</strong> script for training the dataset of rectified flows
